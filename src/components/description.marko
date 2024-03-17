@@ -1,0 +1,64 @@
+<div class="description">
+  <div class="desc-title">
+    <h2>All State Extended Vehicle care</h2>
+    <h5>Protect your vehicle from unexpected repair costs</h5>
+  </div>
+  <div class="desc-content">
+    <for|item| of=state.descriptions>
+      <div>
+        <description-item key=item.id item=item/>
+      </div>
+    </for>
+  </div>
+</div>
+class {
+  onInput() {
+    this.state = {
+      // just for "Use MarkoJS’ feature"
+      descriptions: [
+        {
+          id: "des-01",
+          img: "dollar",
+          title: "Protection Plan",
+          detail:
+            "For as little as $19/mo, we xxxx xxxx xxxx xxxxxxx xxxxxx xxxxxxxx xxx",
+        },
+        {
+          id: "des-02",
+          img: "engine",
+          title: "100% of covered repair costs",
+          detail:
+            "Covers everything from your xxxx xxxxxx xxxx xxxxxx xxxx xxxxxx xxxx xxxxxx",
+        },
+        {
+          id: "des-03",
+          img: "gps",
+          title: "Repair Anywhere",
+          detail:
+            "You choose your mechanic, and we xxxx xxxxxx xxxx xxxxxx xxxx xxxxxx xxxx xxxxxx xxxx xxxxxx xxxx xxxxxx",
+        },
+      ],
+    };
+  }
+}
+style {
+  .description {
+    background-color: white;
+  }
+  .desc-title {
+    background-color: rgb(43, 43, 158);
+    height: 200px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .desc-content {
+    margin-top: 30px;
+  }
+  .desc-title h2 {
+    color: rgb(86, 185, 255);
+  }
+  .desc-title h5 {
+    color: rgb(160, 160, 255);
+  }
+}

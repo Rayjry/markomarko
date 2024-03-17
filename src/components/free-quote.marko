@@ -1,0 +1,83 @@
+<div class="free-quote">
+  <div>
+    <h2>Get a Free Quote</h2>
+  </div>
+  <div>
+    <form class="row g-3 quote-form">
+      <div class="col-md-6">
+        <label for="firstName" class="form-label">
+          First Name
+        </label>
+        <input type="email" class="form-control" id="firstName">
+      </div>
+      <div class="col-md-6">
+        <label for="lastName" class="form-label">
+          Last Name
+        </label>
+        <input type="password" class="form-control" id="lastName">
+      </div>
+      <div class="col-12">
+        <label for="emailAddress" class="form-label">
+          Email Address
+        </label>
+        <input
+          type="text"
+          class="form-control"
+          id="emailAddress"
+          placeholder=""
+        >
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="check01">
+          <label class="form-check-label" for="check01">
+            My vehicle is xxxx and xxxx or xxx, also xxx xxxxx
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="check02">
+          <label class="form-check-label" for="check02">
+            My vehicle is aaabbb and cccccc or xxx
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="check03">
+          <label class="form-check-label" for="check03">
+            I do not live in Xxxxxxxxx, Yxxxx and Zxxxxxx
+          </label>
+        </div>
+      </div>
+      <div class="col-md-8 offset-md-2 submit-terms">
+        By clicking submit, you aggree to xxxxxxxxxxxxxxxxxxxxxxxxx and xxxxxxxxxxxxxxxxxxxxxxxxx
+      </div>
+      <div class="col-12 submit-button">
+        <button type="submit" class="btn btn-danger">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+style {
+  .free-quote {
+    color: white;
+    background-color: rgb(23, 23, 73);
+    padding: 30px;
+  }
+  .quote-form {
+    margin-top: 20px;
+  }
+  .quote-form .submit-terms {
+    word-break: break-all;
+    display: flex;
+    justify-content: center;
+  }
+  .quote-form .submit-button {
+    display: flex;
+    justify-content: center;
+  }
+}
